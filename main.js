@@ -8,3 +8,14 @@ hamburgerButton.addEventListener("click", () => {
   hamburgerButton.classList.toggle("change");
   navLinks.classList.toggle("active");
 });
+
+navLinksEach.forEach((element) => {
+  navLinksEach[0].classList.add("active");
+
+  element.addEventListener("click", function () {
+    navLinksEach.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    element.classList.add("active");
+  });
+});
