@@ -6,7 +6,7 @@ const navLinks = document.querySelector(".nav__links");
 
 hamburgerButton.addEventListener("click", () => {
   hamburgerButton.classList.toggle("change");
-  navLinks.classList.toggle("active");
+  navLinks.classList.toggle("nav__active");
 });
 
 navLinksEach.forEach((element) => {
